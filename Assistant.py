@@ -8,7 +8,7 @@ import os
 # Initialize the speech engine
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)  # You can change the index for different voices
+engine.setProperty('voice', voices[0].id) 
 
 def speak(text):
     engine.say(text)
@@ -103,7 +103,7 @@ if __name__ == "__main__":
             speak(f"The time is {strTime}")
 
         elif command == 'open code':
-            code_path = "C:\\Path\\To\\Your\\CodeEditor.exe"  # Change this to your code editor's path
+            code_path = "C:\\Path\\To\\Your\\CodeEditor.exe"  
             os.startfile(code_path)
 
         elif command == 'quit':
